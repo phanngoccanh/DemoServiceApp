@@ -12,8 +12,8 @@ import com.example.demo1.service.OrderService;
 import com.example.demo1.model.dto.OrderDTO;
 import com.example.demo1.model.dto.OrderDetailDTO;
 import com.example.demo1.model.mapper.OrderMapper;
-import com.example.demo1.model.request.OrderRequest;
-import com.example.demo1.model.request.RatingRequest;
+import com.example.demo1.request.OrderRequest;
+import com.example.demo1.request.RatingRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

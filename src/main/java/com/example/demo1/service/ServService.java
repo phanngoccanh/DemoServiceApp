@@ -2,7 +2,7 @@ package com.example.demo1.service;
 
 import com.example.demo1.model.dto.ServiceDTO;
 import com.example.demo1.model.dto.ServiceSupplierDTO;
-import com.example.demo1.model.request.SearchServiceRequest;
+import com.example.demo1.request.SearchServiceRequest;
 
 import java.util.List;
 

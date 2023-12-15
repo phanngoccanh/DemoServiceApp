@@ -1,4 +1,4 @@
-package com.example.demo1.model.request;
+package com.example.demo1.request;
 
 import java.io.Serializable;
 

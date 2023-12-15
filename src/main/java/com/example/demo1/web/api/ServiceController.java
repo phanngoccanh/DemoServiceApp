@@ -3,7 +3,7 @@ package com.example.demo1.web.api;
 import com.example.demo1.service.ServService;
 import com.example.demo1.model.dto.ServiceDTO;
 import com.example.demo1.model.dto.ServiceSupplierDTO;
-import com.example.demo1.model.request.SearchServiceRequest;
+import com.example.demo1.request.SearchServiceRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

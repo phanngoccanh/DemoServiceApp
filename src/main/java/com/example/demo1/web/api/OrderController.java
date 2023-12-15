@@ -3,8 +3,8 @@ package com.example.demo1.web.api;
 import com.example.demo1.service.OrderService;
 import com.example.demo1.model.dto.OrderDTO;
 import com.example.demo1.model.dto.OrderDetailDTO;
-import com.example.demo1.model.request.OrderRequest;
-import com.example.demo1.model.request.RatingRequest;
+import com.example.demo1.request.OrderRequest;
+import com.example.demo1.request.RatingRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
