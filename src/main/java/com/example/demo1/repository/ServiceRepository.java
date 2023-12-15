@@ -1,7 +1,7 @@
 package com.example.demo1.repository;
 
-import com.example.demo1.domain.Service;
-import com.example.demo1.domain.Supplier;
+import com.example.demo1.model.domain.Service;
+import com.example.demo1.model.domain.Supplier;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

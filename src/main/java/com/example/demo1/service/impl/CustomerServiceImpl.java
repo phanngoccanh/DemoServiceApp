@@ -1,10 +1,10 @@
 package com.example.demo1.service.impl;
 
-import com.example.demo1.domain.Customer;
+import com.example.demo1.model.domain.Customer;
 import com.example.demo1.repository.CustomerRepository;
 import com.example.demo1.service.CustomerService;
-import com.example.demo1.service.dto.CustomerDTO;
-import com.example.demo1.service.mapper.CustomerMapper;
+import com.example.demo1.model.dto.CustomerDTO;
+import com.example.demo1.model.mapper.CustomerMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

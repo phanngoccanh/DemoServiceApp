@@ -1,15 +1,15 @@
 package com.example.demo1.service.impl;
 
-import com.example.demo1.domain.Service;
-import com.example.demo1.domain.Supplier;
+import com.example.demo1.model.domain.Service;
+import com.example.demo1.model.domain.Supplier;
 import com.example.demo1.repository.ServiceRepository;
 import com.example.demo1.repository.SupplierRepository;
 import com.example.demo1.service.ServService;
-import com.example.demo1.service.dto.ServiceDTO;
-import com.example.demo1.service.dto.ServiceSupplierDTO;
-import com.example.demo1.service.dto.SupplierDTO;
-import com.example.demo1.service.mapper.ServiceMapper;
-import com.example.demo1.service.request.SearchServiceRequest;
+import com.example.demo1.model.dto.ServiceDTO;
+import com.example.demo1.model.dto.ServiceSupplierDTO;
+import com.example.demo1.model.dto.SupplierDTO;
+import com.example.demo1.model.mapper.ServiceMapper;
+import com.example.demo1.model.request.SearchServiceRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

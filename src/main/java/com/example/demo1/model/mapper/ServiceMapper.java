@@ -1,8 +1,8 @@
-package com.example.demo1.service.mapper;
+package com.example.demo1.model.mapper;
 
-import com.example.demo1.domain.Service;
-import com.example.demo1.domain.Supplier;
-import com.example.demo1.service.dto.ServiceDTO;
+import com.example.demo1.model.domain.Service;
+import com.example.demo1.model.domain.Supplier;
+import com.example.demo1.model.dto.ServiceDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

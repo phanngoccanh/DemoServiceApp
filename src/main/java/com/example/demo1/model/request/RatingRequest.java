@@ -1,4 +1,4 @@
-package com.example.demo1.service.request;
+package com.example.demo1.model.request;
 
 import java.io.Serializable;
 

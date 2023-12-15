@@ -1,19 +1,19 @@
 package com.example.demo1.service.impl;
 
-import com.example.demo1.domain.Customer;
-import com.example.demo1.domain.Order;
-import com.example.demo1.domain.OrderDetail;
-import com.example.demo1.domain.Service;
+import com.example.demo1.model.domain.Customer;
+import com.example.demo1.model.domain.Order;
+import com.example.demo1.model.domain.OrderDetail;
+import com.example.demo1.model.domain.Service;
 import com.example.demo1.repository.CustomerRepository;
 import com.example.demo1.repository.OrderDetailRepository;
 import com.example.demo1.repository.OrderRepository;
 import com.example.demo1.repository.ServiceRepository;
 import com.example.demo1.service.OrderService;
-import com.example.demo1.service.dto.OrderDTO;
-import com.example.demo1.service.dto.OrderDetailDTO;
-import com.example.demo1.service.mapper.OrderMapper;
-import com.example.demo1.service.request.OrderRequest;
-import com.example.demo1.service.request.RatingRequest;
+import com.example.demo1.model.dto.OrderDTO;
+import com.example.demo1.model.dto.OrderDetailDTO;
+import com.example.demo1.model.mapper.OrderMapper;
+import com.example.demo1.model.request.OrderRequest;
+import com.example.demo1.model.request.RatingRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -128,6 +128,7 @@ public class OrderServiceImpl implements OrderService {
             List<OrderDetailDTO> orderDetailDTOs = orderDetails.stream().map(orderDetail -> {
                 OrderDetailDTO orderDetailDTO = new OrderDetailDTO();
                 orderDetailDTO.setOrderDetailId(orderDetail.getOrderDetailId());
+                orderDetailDTO.setOrderId(orderDetail.getOrder().getOrderId());
                 orderDetailDTO.setServiceId(orderDetail.getService().getServiceId());
                 orderDetailDTO.setServiceId(orderDetail.getService().getServiceId());
                 orderDetailDTO.setEvaluate(orderDetail.getEvaluate());

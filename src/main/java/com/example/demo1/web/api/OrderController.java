@@ -1,12 +1,10 @@
 package com.example.demo1.web.api;
 
-import com.example.demo1.domain.Order;
 import com.example.demo1.service.OrderService;
-import com.example.demo1.service.dto.OrderDTO;
-import com.example.demo1.service.dto.OrderDetailDTO;
-import com.example.demo1.service.request.OrderRequest;
-import com.example.demo1.service.request.RatingRequest;
-import org.springframework.http.ResponseEntity;
+import com.example.demo1.model.dto.OrderDTO;
+import com.example.demo1.model.dto.OrderDetailDTO;
+import com.example.demo1.model.request.OrderRequest;
+import com.example.demo1.model.request.RatingRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,12 +23,12 @@ public class OrderController {
         return this.orderService.getByCustomerId(customerId);
     }
 
-    @GetMapping("/get-order-detail/{orderId}")
+    @GetMapping("/{orderId}")
     public List<OrderDetailDTO> getOrderDetail(@PathVariable("orderId") String orderId){
         return this.orderService.getDetailOrder(orderId);
     }
 
-    @PostMapping("/create")
+    @PostMapping
     public void create(@RequestBody OrderRequest request){
         this.orderService.create(request);
     }

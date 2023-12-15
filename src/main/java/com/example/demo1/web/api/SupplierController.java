@@ -1,7 +1,7 @@
 package com.example.demo1.web.api;
 
 import com.example.demo1.service.SupplierService;
-import com.example.demo1.service.dto.SupplierDTO;
+import com.example.demo1.model.dto.SupplierDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,12 +15,12 @@ public class SupplierController {
         this.supplierService = supplierService;
     }
 
-    @GetMapping("/get-all")
+    @GetMapping
     public List<SupplierDTO> getAll(){
         return this.supplierService.getAll();
     }
 
-    @PostMapping("/create")
+    @PostMapping
     public void create(@RequestBody SupplierDTO supplierDTO){
         this.supplierService.create(supplierDTO);
     }
